@@ -16,11 +16,13 @@ var config = {
     html: './src/*.html',
     js: './src/**/*.js',
     dist: './dist',
-    images: './src/images/*',
+    images: './public/images/*',
     css: [
       'node_modules/bootstrap/dist/css/bootstrap.min.css',
       'node_modules/bootstrap/dist/css/bootstrap-theme.min.css',
-      'node_module/toastr/toastr.scss'
+      'node_module/toastr/toastr.scss',
+      'src/styles/**/*.css',
+      'public/css/**/*.css'
     ],
     mainJs: './src/main.js'
   }
@@ -67,11 +69,8 @@ gulp.task('css', function() {
 
 gulp.task('images', function() {
   gulp.src(config.paths.images)
-    .pipe(gulp.dest(config.paths.dist + '/images'))
+    .pipe(gulp.dest(config.paths.dist + '/public/images'))
     .pipe(connect.reload())
-
-  gulp.src('./src/favicon.jpg')
-    .pipe(gulp.dest(config.paths.dist));
 });
 
 gulp.task('lint', function() {

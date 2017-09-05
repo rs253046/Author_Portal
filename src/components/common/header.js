@@ -8,8 +8,8 @@ var Header = React.createClass({
         return (
             <nav className="navbar navbar-default">
               <div className="container-fluid">
-                <Link to="app" className="navbar-brand">
-                  <img src="images/pluralsight-logo.png"/>    
+                <Link to="app" className="navbar-brand pad-10">
+                  <img src="public/images/ira_author.png" width={60} height={35}/>    
                 </Link>
                 <ul className="nav navbar-nav">
                   <li><Link to="app">Home</Link></li> 

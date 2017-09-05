@@ -50424,17 +50424,17 @@ module.exports = {
 	authors: 
 	[
 		{
-			id: 'cory-house', 
-			firstName: 'Cory', 
-			lastName: 'House'
+			id: '0010001', 
+			firstName: 'John', 
+			lastName: 'Wright'
 		},	
 		{
-			id: 'scott-allen', 
-			firstName: 'Scott', 
-			lastName: 'Allen'
+			id: '0010002', 
+			firstName: 'William', 
+			lastName: 'Shakespeare'
 		},	
 		{
-			id: 'dan-wahlin', 
+			id: '0010003', 
 			firstName: 'Dan', 
 			lastName: 'Wahlin'
 		}
@@ -50756,8 +50756,8 @@ var Header = React.createClass({displayName: "Header",
         return (
             React.createElement("nav", {className: "navbar navbar-default"}, 
               React.createElement("div", {className: "container-fluid"}, 
-                React.createElement(Link, {to: "app", className: "navbar-brand"}, 
-                  React.createElement("img", {src: "images/pluralsight-logo.png"})
+                React.createElement(Link, {to: "app", className: "navbar-brand pad-10"}, 
+                  React.createElement("img", {src: "public/images/ira_author.png", width: 60, height: 35})
                 ), 
                 React.createElement("ul", {className: "nav navbar-nav"}, 
                   React.createElement("li", null, React.createElement(Link, {to: "app"}, "Home")), 
@@ -50820,7 +50820,7 @@ var Home = React.createClass({displayName: "Home",
     render: function() {
         return (
             React.createElement("div", {className: "jumbotron"}, 
-              React.createElement("h1", null, "Pluralsight Administration"), 
+              React.createElement("h1", null, "Author Administration"), 
               React.createElement("p", null, "React, React Router, and Flux for ultra-responsive web apps."), 
               React.createElement(Link, {to: "about", className: "btn btn-primary btn-lg"}, "Learn more")
              )
